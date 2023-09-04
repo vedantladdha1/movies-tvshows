@@ -7,7 +7,7 @@ import useFetch from '../../../hooks/useFetch';
 import Carousel from '../../../components/carousel/Carousel.jsx';
 const Trending = () => {
 const [endpoint , setEndpoint] = useState("day");
-const { data , loading } = useFetch(`/trending/movie/${endpoint}`)
+const { data , loading } = useFetch(`/trending/all/${endpoint}`)
 console.log(data)
 
     const onTabChange = (tab) => {
