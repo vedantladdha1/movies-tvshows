@@ -21,9 +21,9 @@ import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
 const DetailsBanner = ({ video, crew }) => {
 
-    const { show , setShow } = useState(false);
+    const [ show , setShow ] = useState(false);
 
-    const { videoId , setVideoId} = useState(null);
+    const [ videoId , setVideoId] = useState(null);
 
      const {mediaType , id } = useParams();
      const {data , loading} = useFetch(`/${mediaType}/${id}`)
