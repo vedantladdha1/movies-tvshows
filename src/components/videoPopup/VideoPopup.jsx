@@ -19,12 +19,14 @@ const VideoPopup = ({ show, setShow, videoId, setVideoId }) => {
                 <span className="closeBtn" onClick={hidePopup}>
                     Close
                 </span>
+
+               
                 <ReactPlayer
                     url={`https://www.youtube.com/watch?v=${videoId}`}
                     controls
                     width="100%"
                     height="100%"
-                     playing={true}
+                    playing={true}
                 />
             </div>
         </div>
